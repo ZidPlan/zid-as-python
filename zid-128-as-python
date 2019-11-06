@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+##
+# zid-128-as-python
+#
+# Generate a Zen identifier (http://www.zidplan.com)
+# using 128 bits and implementation as a Python script.
+#
+# Usage:
+#
+#     zid-128-as-python
+#
+# Example:
+#
+#     $ zid-128-as-python
+#     0cb49f132271bf0436a8f0689f87ee9c
+#
+# Implementation:
+#
+#   * Uses `bytes.hex()` which is Python 3.5+.
+#
+#
+# ## Tracking
+#
+#   * Command: zid-128-as-python
+#   * Version: 1.0.0
+#   * Created: 2019-11-06
+#   * Updated: 2018-11-06
+#   * License: Any of GPL, LGPL, MIT, BSD
+#   * Contact: Joel Parker Henderson (http://joelparkerhenderson.com)
+##
+
+import os
+print(os.urandom(16).hex())
